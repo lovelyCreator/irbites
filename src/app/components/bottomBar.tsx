@@ -32,9 +32,9 @@ export default function BottomBar() {
                         <p className="text-[16px] font-bold w-full text-left mt-[20px] pl-4 mb-[10px]">Social Media</p>
                         <a className="text-[16px] font-light pl-4 text-center pt-2" href="/">Contact Us</a>
                         <a className="text-[16px] flex gap-7 font-light pl-4 text-center pt-5" href="/">
-                            <Image src='/img/linkedin.svg' alt="Logo" width={20} height={20}/>
+                            <Image src='/img/LinkedIn.svg' alt="Logo" width={20} height={20}/>
                             <Image src='/img/instagram.svg' alt="Logo" width={20} height={20}/>
-                            <Image src='/img/youtube.svg' alt="Logo" width={20} height={20}/>
+                            <Image src='/img/YouTube.svg' alt="Logo" width={20} height={20}/>
                             <Image src='/img/X.svg' alt="Logo" width={20} height={20}/>
                             <Image src='/img/facebook.svg' alt="Logo" width={20} height={20}/>
                         </a>
