@@ -19,8 +19,8 @@ function MobileNav({open, setOpen}: {open: boolean, setOpen: React.Dispatch<Reac
     
     // // const wei = screen.width/100;
     return (
-        <div className={`absolute inset-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-            {/* <div className="flex items-center justify-center filter drop-shadow-md bg-[#220F18] px-4 py-4 h-15 ">
+        <div className={`text-[#060a20] absolute inset-0 h-[25vh] w-auto bg-[#7e44db] transition-opacity duration-300 ease-in-out filter drop-shadow-md ${open ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="flex items-center justify-center filter drop-shadow-md bg-[#220F18] px-4 py-4 h-15 ">
                 <a className=" ml-1 text-left items-start w-full flex" href="/">
                     <Image src='/img/main_Logo.svg' 
                         alt="Logo" 
@@ -30,29 +30,36 @@ function MobileNav({open, setOpen}: {open: boolean, setOpen: React.Dispatch<Reac
                     />
                 </a>
             </div>
-            <div className={`${styles.rubikFont} flex flex-col ml-4 overflow-y-auto `}>
-                <div className="w-[100%] sm:w-[50%]">
-                    <a className="text-xl font-medium my-4" href="/bestMattress" onClick={() => {setTimeout(() => setOpen(!open), 100);}}
+            <div className={`${styles.rubikFont} flex flex-col pt-3 overflow-hidden w-full`}>
+                <div className="pl-4 w-full hover:bg-[#6b37be]">
+                    <a className="text-xl font-medium my-4" href="/" onClick={() => {setTimeout(() => setOpen(!open), 100);}}
                         // onMouseEnter={()=>setBest(true)}
                     >
                         Cases
                     </a>
                 </div>
-                <div>
-                    <a className="text-xl font-normal my-4" href="/reviews" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}
+                <div className="pl-4 w-full hover:bg-[#6b37be]">
+                    <a className="text-xl font-normal my-4" href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}
                             // onMouseEnter={()=>setReview(true)}
                     >
                         About
                     </a>
                 </div>
-                <div>
-                    <a className="text-xl font-normal my-4" href="/reviews" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}
+                <div className="pl-4 w-full hover:bg-[#6b37be]">
+                    <a className="text-xl font-normal my-4" href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}
                             // onMouseEnter={()=>setReview(true)}
                     >
                         Testimonial
                     </a>
                 </div>
-            </div>   */}
+                <div className="pl-4 w-full hover:bg-[#6b37be] flex">
+                    <a className="text-xl font-bold my-4" href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}
+                            // onMouseEnter={()=>setReview(true)}
+                    >
+                        Sign up
+                    </a>
+                </div>
+            </div>  
         </div>
     )
 }
